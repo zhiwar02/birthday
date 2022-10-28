@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مینوو</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        *,*:after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+}
+*,*:after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background: #000;
+    background-image: url("image/xelan2.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.container{
+max-width: 1000px;
+width: 100%;
+display: flex;
+align-content: center;
+justify-content: space-evenly;
+}
+.uni_btn{
+    animation: opacityAinm 0.3s;
+    animation-fill-mode: forwards;
+}
+.uni_btn span{}
+.uni_btn span a{
+    background:grey;
+    height: 160px;
+    width: 160px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    position:relative ;
+    right: -50px;
+    top: -50px;
+    opacity: 0;
+    animation: btnAnim 1s;
+    animation-fill-mode: forwards;
+
+}
+@media screen and (max-width: 768px) {
+    .uni_btn span a{
+   margin: auto; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+.uni_btn span{
+    perspective: 200px;
+    perspective-origin: 50% 100%;
+}
+.uni_btn span a:hover{ transform: rotate(30deg) translate3d(0px,-30px,0px);}
+    .uni_btn span:nth-child(1) a{background: #16a085; animation-delay: 0.4s;}
+    .uni_btn span:nth-child(1) a:hover{box-shadow: 0 22px rgba(22,160,133,0,7);}
+    .uni_btn span:nth-child(2) a{background: #ff9f43 ; animation-delay: 1.0s;}
+    .uni_btn span:nth-child(2) a:hover{box-shadow: 0 22px rgba(255,159,67,0,7);}
+    .uni_btn span:nth-child(3) a{background: #0abde3 ; animation-delay: 1.4s;}
+    .uni_btn span:nth-child(3) a:hover{box-shadow: 0 22px rgba(10,189,227,0,7);}
+    .uni_btn span:nth-child(4) a{background: #ee5253 ; animation-delay: 2.0s;}
+    .uni_btn span:nth-child(4) a:hover{box-shadow: 0 22px rgba(238,82,83,0,7);}
+
+.uni_btn span a i{
+    margin-bottom: 10px;
+    font-size: 130%;
+
+}
+@keyframes btnAnim{
+    0%{
+        opacity: 0;
+        top: -50px;
+        right: -50px;
+
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+        right: 0px;
+        
+    }
+}
+@keyframes opacityAinm{
+    0%{ opacity: 0;}
+    90%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+    </style>
+</head>
+<body>
+   
+<body>
+     <div class="container uni_btn">
+         <div class="col">
+             <div class="row-sm-6" style="margin-top: 20px;">
+                 <span>
+                     <a href="./index-end.html" target="_blank"><i class="b" aria-hidden="true"></i>
+                          بیکەوە😅
+                     </a>
+                 </span>
+                 </div>
+             <div class="row-sm-6" style="margin-top: 20px;">
+                <audio style="display: none;" src="./five.m4a" autoplay controls></audio>
+                <span>
+                    <a href="./index-massege.html" target="_blank" ><i class="a" aria-hidden="true"></i>
+                    10/11/2022                    </a>
+                </span>
+            </div>
+
+         </div>
+     <div class="container uni_btn">
+         <div class="col">
+             <div class="row-sm-6" style="margin-top: 20px;">
+                <span>
+                    <a href="./index-diari.html" target="_blank" ><i class="a" aria-hidden="true"></i>
+                        کۆتا بەش
+                     </a>
+                </span>
+            </div>
+         </div>
+     </div>
+</body>
+</html>
